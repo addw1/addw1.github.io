@@ -12,31 +12,31 @@
     "link_1": [
         "https://ningningstudyblog.blogspot.com/",
         "fa-solid fa-blog",
-        "博客"
+        "blog"
     ],
     "link_2": [
         "https://github.com/Github-conversational-robot/chat_github_robot",
         "fa-solid fa-cloud",
-        "开源项目bot"
+        "github bot"
     ],
     "link_3": [
-        "http://www.wuhobin.top/",
+        "https://open.spotify.com/",
         "fa-solid fa-compass",
-        "起始页"
+        "spotify"
     ],
     "link_4": [
-        "",
+        "https://github.com/addw1",
         "fa-solid fa-book-bookmark",
-        "NULL"
+        "Github"
     ],
     "link_5": [
-        "http://www.wuhobin.top/",
+        "",
         "fa-solid fa-flask",
-        "开发中..."
+        "developing"
     ],
     "link_6": [
-        "http://www.wuhobin.top/",
+        "",
         "fa-solid fa-flask",
-        "敬请期待..."
+        "developing"
     ]
 }
