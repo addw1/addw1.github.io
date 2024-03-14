@@ -201,7 +201,7 @@ function time() {
     let y = dt.getYear() + 1900;
     let mm = dt.getMonth() + 1;
     let d = dt.getDate();
-    let weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+    let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = dt.getDay();
     let h = dt.getHours();
     let m = dt.getMinutes();
@@ -215,7 +215,7 @@ function time() {
     if (s < 10) {
         s = "0" + s;
     }
-    $("#time").html(y + "&nbsp;年&nbsp;" + mm + "&nbsp;月&nbsp;" + d + "&nbsp;日&nbsp;" + "<span class='weekday'>" + weekday[day] + "</span><br>" + "<span class='time-text'>" + h + ":" + m + ":" + s + "</span>");
+    $("#time").html(y + "&nbsp;. &nbsp;" + mm + "&nbsp;.&nbsp;" + d + "&nbsp;  &nbsp;" + "<span class='weekday'>" + weekday[day] + "</span><br>" + "<span class='time-text'>" + h + ":" + m + ":" + s + "</span>");
     t = setTimeout(time, 1000);
 }
 
@@ -248,7 +248,7 @@ $("#github").mouseover(function () {
 $("#qq").mouseover(function () {
     $("#link-text").html("有什么事吗");
 }).mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("contact me");
 });
 $("#email").mouseover(function () {
     $("#link-text").html("来封 Email");
