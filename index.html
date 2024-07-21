@@ -1,505 +1,501 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <!-- 基础信息 -->
-    <meta charset="utf-8">
-    <meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <!-- 强制 HTTPS，若不需要可删除，但可能出现问题 -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="force-rendering" content="webkit"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#424242"/>
-    <meta name="description" content="basic information">
-    <meta name="keywords" content="ning's personal page">
-    <meta name="author" content="Aurora">
-    <title>ningning Home page</title>
-    <!-- jQuery -->
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
-    <!-- HarmonyOS Sans -->
-    <!-- https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css -->
-    <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css"/>
-    <!-- 引入样式 -->
-    <link rel="stylesheet" type="text/css"
-          href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="./css/loading.css">
-    <link rel="stylesheet" type="text/css" href="./css/animation.css">
-    <link rel="icon" href="https://www.vectorlogo.zone/logos/bower/bower-icon.svg">
-    <link rel="apple-touch-icon" href="https://www.vectorlogo.zone/logos/bower/bower-icon.svg">
-    <!-- Izitoast -->
-    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
-    <script type="text/javascript"
-            src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
-    </script>
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <!-- Aplayer -->
-    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.css"
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.js" crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
-    <!-- <script src="./js/Meting.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- IE Out -->
-    <script>
-        if ( /*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href =
-            "/upgrade-your-browser/index.html?referrer=" + encodeURIComponent(window.location.href);
-    </script>
-    <!-- PWA -->
-    <link rel="manifest" href="/manifest.json">
-    <!-- 51.LA 统计 -->
-    <script src="./js/51LA.js"></script>
+	<title>Sonu Sourav</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+
+	<link rel="stylesheet" href="css/aos.css" />
+
+	<link rel="stylesheet" href="css/ionicons.min.css" />
+
+	<link rel="stylesheet" href="css/flaticon.css" />
+	<link rel="stylesheet" href="css/icomoon.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/switch.css" />
+	<link rel="stylesheet" href="css/shake.css" />
+	<link rel="stylesheet" href="css/timeline.css" />
+	<link rel="stylesheet" href="css/skill-counter.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+		type="text/javascript"></script>
 </head>
 
-<body>
-<!--加载动画-->
-<div id="loading-box">
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-        <div class="loader">
-            <div class="inner one"></div>
-            <div class="inner two"></div>
-            <div class="inner three"></div>
-        </div>
-        <div class="loading-word">
-            <p class="loading-title" id="loading-title">Auroraの主页</p>
-            <span id="loading-text">加载中</span>
-        </div>
-    </div>
-</div>
-<section id="section" class="section">
-    <!-- 背景图片 -->
-    <div class="bg-all">
-        <img id="bg" onerror="this.classList.add('error');">
-        <div class="cover"></div>
-    </div>
-    <!-- 鼠标指针 -->
-    <div id="g-pointer-1"></div>
-    <div id="g-pointer-2"></div>
-    <!-- 主体内容 -->
-    <main id="main" class="main">
-        <div class="container" id="container">
-            <div class="row" id="row">
-                <div class="col left">
-                    <!--基本信息-->
-                    <div class="main-left">
-                        <!--Logo-->
-                        <div class="main-img">
-                            <img id="logo-img" src="./img/bobo.png" alt="img">
-                            <div class="img-title">
-                                <span class="img-title-big" id="logo-text-1">ningning</span>
-                                <span class="img-text" id="logo-text-2">.com</span>
-                            </div>
-                        </div>
-                        <!--介绍信息-->
-                        <div class="message cards" id="switchmore">
-                            <div class="des" id="des">
-                                <i class="fa-solid fa-quote-left"></i>
-                                <div class="des-title"><span id="change">Hello&nbsp;World&nbsp;!</span><br/><span
-                                        id="change1">Hello World🧑‍💻</span></div>
-                                <i class="fa-solid fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <!--社交链接-->
-                        <div class="social" id="social">
-                            <a href="https://github.com/addw1" class="link" id="github" style="margin-left: 4px"
-                               target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            
-                            <a href="mailto:52068838a@gmail.com" class="link" id="email">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                       
-                            <a href="https://www.linkedin.com/in/qingning-zeng-6b70252b2/" class="link" id="facebook" target="_blank">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a id="link-text">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-                <!--第二屏 Logo-->
-                <div class="logo cards" style="display: none" id="changemore">
-                    <a class="logo-text" id="logo-text-small">ningning.bro</a>
-                </div>
-                <div class="col right">
-                    <div class="main-right">
-                        <!--功能区-->
-                        <div class="row rightone" id="rightone">
-                            <div class="col hitokotos">
-                                <!--一言-->
-                                <div class="hitokoto cards" id="hitokoto">
-                                    <!--切换音乐-->
-                                    <div class="open-music fixed-top" id="open-music">
-                                        <i class="fa-solid fa-compact-disc"></i>
-                                        <span>&nbsp;打开音乐播放器</span>
-                                    </div>
-                                    <!--切换音乐结束-->
-                                    <div class="hitokoto-all">
-                                        <div class="hitokoto-text"><span
-                                                id="hitokoto_text">每一个人都应该明确自己的方向和位置</span>
-                                        </div>
-                                        <div class="hitokoto-from">-「&nbsp;<span id="from_text">無名</span>&nbsp;」
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--音乐-->
-                                <div class="music" id="music">
-                                    <div class="music-all">
-                                        <div class="music-button">
-                                            <div id="music-open">音乐列表</div>
-                                            <div id="music-close">回到一言</div>
-                                        </div>
-                                        <div class="music-control">
-                                            <i class="fa-solid fa-backward-step" id="last"></i>
-                                            <div id="play">
-                                                <i class="fa-solid fa-play"></i>
-                                            </div>
-                                            <i class="fa-solid fa-forward-step" id="next"></i>
-                                        </div>
-                                        <div class="music-menu">
-                                            <div class="music-text">
-                                                <span id="music-name">未播放音乐</span>
-                                            </div>
-                                            <div class="music-volume" style="display: none;">
-                                                <div id="volume-ico">
-                                                    <i class="fa-solid fa-volume-low"></i>
-                                                </div>
-                                                <input type="range" min="0" max="1" step="0.01" id="volume">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col times">
-                                <!--时间-->
-                                <div class="time cards" id="upWeather">
-                                    <div class="timeshow" id="time">
-                                        2000&nbsp;年&nbsp;0&nbsp;月&nbsp;00&nbsp;日&nbsp;<span
-                                            class="weekday">星期一</span><br><span class="time-text">00:00:00</span>
-                                    </div>
-                                    <div class="weather">
-                                        <span id="city_text">天气</span>&nbsp;
-                                        <span id="wea_text">加载失败</span>&nbsp;
-                                        <span id="tem_text"></span>
-                                        <span id="win_text">次数</span>
-                                        <span id="win_speed">超限</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--分隔线-->
-                        <div class="line">
-                            <i class="fa-solid fa-link"></i>
-                            <span class="line-text">网站列表</span>
-                        </div>
-                        <!--网站链接-->
-                        <div class="link">
-                            <!--第一组-->
-                            <div class="row">
-                                <div class="col">
-                                    <a id="link-url-1" href="https://ningningstudyblog.blogspot.com/" target="_blank">
-                                        <div class="link-card cards">
-                                            <i id="link-icon-1" class="fa-solid fa-blog"></i>
-                                            <span class="link-name" id="link-name-1">study blog</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col 2">
-                                    <a id="link-url-2" href="https://github.com/Github-conversational-robot/chat_github_robot" target="_blank">
-                                        <div class="link-card cards">
-                                            <i id="link-icon-2" class="fa-solid fa-cloud"></i>
-                                            <span class="link-name" id="link-name-2">talk bot</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a id="link-url-3" href="https://open.spotify.com/" target="_blank">
-                                        <div class="link-card cards">
-                                            <i id="link-icon-3" class="fa-solid fa-music"></i>
-                                            <span class="link-name" id="link-name-3">spotify</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--第二组-->
-                            <div class="row" style="margin-top: 1.5rem;">
-                                <div class="col">
-                                    <a id="link-url-4" href="" target="_blank">
-                                        <div class="link-card cards">
-                                            <i id="link-icon-4" class="fa-solid fa-compass"></i>
-                                            <span class="link-name" id="link-name-4">NULL</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col 2">
-                                    <a id="link-url-5" href="" target="_blank">
-                                        <div class="link-card cards">
-                                            <i id="link-icon-5" class="fa-solid fa-book-bookmark"></i>
-                                            <span class="link-name" id="link-name-5">developing</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a id="link-url-6" href="" target="_blank">
-                                        <div class="link-card cards">
-                                            <i id="link-icon-6" class="fa-solid fa-flask"></i>
-                                            <span class="link-name" id="link-name-6">developing</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--展开菜单按钮-->
-            <div class="menu" id="switchmenu">
-                <a class="munu-button cards" id="menu">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-            <!--更多内容-->
-            <div class="more" id="more">
-                <!--关闭按钮-->
-                <div class="close fixed-top" id="close">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                </div>
-                <div class="line" style="margin-top: 1rem;">
-                    <i class="fa-solid fa-angle-left"></i>
-                    <span class="line-text">时间胶囊</span>
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="date" id="date">
-                    <div class="item" id="dayProgress">
-                        <div class="date-text" style="margin-top: 0rem;">今日已经度过了&nbsp;<span></span>&nbsp;小时
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
-                    <div class="item" id="weekProgress">
-                        <div class="date-text">本周已经度过了&nbsp;<span></span>&nbsp;天</div>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
-                    <div class="item" id="monthProgress">
-                        <div class="date-text">本月已经度过了&nbsp;<span></span>&nbsp;天</div>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
-                    <div class="item" id="yearProgress">
-                        <div class="date-text">今年已经度过了&nbsp;<span></span>&nbsp;个月</div>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="line">
-                    <i class="fa-solid fa-angle-left"></i>
-                    <span class="line-text">杂七杂八</span>
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <!--网站链接-->
-                <div class="row">
-                    <div class="col">
-                        <a href="#" target="_blank">
-                            <div class="link-card cards">
-                                <span class="link-name">站点监测</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col 2">
-                        <a href="https://blog.bywind.xyz/music/" target="_blank">
-                            <div class="link-card cards">
-                                <span class="link-name">播放器</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#" target="_blank">
-                            <div class="link-card cards">
-                                <span class="link-name">编辑器</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 1.5rem;">
-                    <div class="col">
-                        <a href="https://blog.bywind.xyz//gallery/" target="_blank">
-                            <div class="link-card cards">
-                                <span class="link-name">时光相册</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col 2">
-                        <a href="#" target="_blank">
-                            <div class="link-card cards">
-                                <span class="link-name">文件库</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a id="openmore">
-                            <div class="link-card cards">
-                                <span class="link-name">更多</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--更多页面-->
-            <div class="box" id="box" style="display: none">
-                <div class="box-wrapper">
-                    <!--关闭按钮-->
-                    <div class="closebox fixed-top" id="closemore">
-                        <i class="fa-solid fa-circle-xmark"></i>
-                    </div>
-                    <!--左侧内容-->
-                    <div class="box-left">
-                        <div class="img-title">
-                            <span class="img-title-big" id="logo-title-other">ningning</span>
-                            <span class="img-text" id="logo-title-other-small">.bro</span><br/>
-                            <span class="img-text">&nbsp;v&nbsp;1.0</span>
-                            <a href="https://github.com/haonan15" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                        <!--更多内容-->
-                        <div class="accordion" id="accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                        壁纸设置
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                     aria-labelledby="headingOne" data-bs-parent="#accordion">
-                                    <div class="accordion-body">
-                                        <div class="set">
-                                            <div class="wallpaper" id="wallpaper">
-                                                <div class="form-radio">
-                                                    <input type="radio" class="set-wallpaper" style="display: none;"
-                                                           id="radio1" value="1" name="wallpaper-type">
-                                                    <label for="radio1">默认壁纸</label>
-                                                </div>
-                                                <div class="form-radio">
-                                                    <input type="radio" class="set-wallpaper" style="display: none;"
-                                                           id="radio2" value="2" name="wallpaper-type">
-                                                    <label for="radio2" id="wallpaper_text1">每日一图</label>
-                                                </div>
-                                                <div class="form-radio">
-                                                    <input type="radio" class="set-wallpaper" style="display: none;"
-                                                           id="radio3" value="3" name="wallpaper-type">
-                                                    <label for="radio3" id="wallpaper_text2">随机风景</label>
-                                                </div>
-                                                <div class="form-radio">
-                                                    <input type="radio" class="set-wallpaper" style="display: none;"
-                                                           id="radio4" value="4" name="wallpaper-type">
-                                                    <label for="radio4" id="wallpaper_text3">随机动漫</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--更新日志-->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                        更新日志
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                     aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                                    <div class="accordion-body">
-                                        <div class="upnote">
-                                                <span class="uptext">
-                                                    <i class="fa-solid fa-circle-plus"></i>&nbsp;音乐歌单支持快速自定义
-                                                </span>
-                                            <span class="uptext">
-                                                    <i class="fa-solid fa-circle-plus"></i>&nbsp;壁纸支持个性化设置
-                                                </span>
-                                            <span class="uptext">
-                                                    <i class="fa-solid fa-circle-plus"></i>&nbsp;音乐播放器支持音量控制
-                                                </span>
-                                            <span class="uptext">
-                                                    <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;修复天气 API
-                                                </span>
-                                            <span class="uptext">
-                                                    <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;时光胶囊显示错误
-                                                </span>
-                                            <span class="uptext">
-                                                    <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;移动端动画及细节
-                                                </span>
-                                            <span class="uptext">
-                                                    <i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;图标更换为 Font
-                                                    Awesome</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Aplayer-->
-                    <div class="box-right">
-                        <div id="aplayer">
-                            <span>音乐播放器加载失败</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- 版权信息 -->
-    <footer id="footer" class="fixed-bottom footer">
-        <div class="power">
-                <span id="power">Copyright&nbsp;&copy;
-                    <script>
-                        document.write((new Date()).getFullYear());
-                    </script>
-                    <a href="https://blog.bywind.xyz" id="power-text">Aurora</a>
-                </span>
-            <!-- 以下信息请不要修改哦 -->
-            <!--                <span id="made">&amp;&nbsp;Made&nbsp;by&nbsp;<a href="https://github.com/imsyy/home"-->
-            <!--                        target="_blank">imsyy</a></span>-->
-            <!-- 站点备案 -->
-            <a href="https://beian.miit.gov.cn" id="beian" target="_blank">&amp;&nbsp;鄂ICP备20006685号</a>
-        </div>
-        <!-- 歌词显示 -->
-        <div id="lrc"></div>
-    </footer>
-</section>
-<!-- sw.js -->
-<script>
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-            navigator.serviceWorker.register("sw.js");
-        });
-    }
-</script>
-<!-- noscript -->
-<noscript>
-    <div class="noscript fixed-top">请开启 JavaScript</div>
-</noscript>
-<!-- JS -->
-<script type="text/javascript" src="./js/main.js"></script>
-<script type="text/javascript" src="./js/set.js"></script>
-<script type="text/javascript" src="./js/time.js"></script>
-<script type="text/javascript" src="./js/js.cookie.js"></script>
-<script type="text/javascript"
-        src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/js/bootstrap.min.js">
-</script>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target nav-test"
+		id="ftco-navbar">
+		<div class="container" style="width: 100%;">
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<a class="navbar-brand turn-white" href="index.html">$$</a>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#home-section" class="nav-link"><span
+								class="turn-white" id="home">Home</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#about-section" class="nav-link"><span
+								class="turn-white" id="about">About</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#skills-section" class="nav-link"><span
+								class="turn-white" id="skills">Skills</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#timeline-section" class="nav-link"><span
+								class="turn-white" id="timeline">Timeline</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#projects-section" class="nav-link"><span
+								class="turn-white" id="projects">Projects</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#blog-section" class="nav-link"><span
+								class="turn-white" id="blog">Blog</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://addw1.github.io/index.html#contact-section" class="nav-link"><span
+								class="turn-white" id="contact">Contact</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="toggle-box" style="margin-top: 10px;">
+				<input type="checkbox" name="checkbox1" id="toggle-box-checkbox" />
+				<label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
+				<label for="toggle-box-checkbox" class="toggle-box-label"></label>
+			</div>
+		</div>
+	</nav>
+
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/my_pic.jpg); ">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '10%' }">
+							<div class="text">
+								<h2 class="shake">🖐️</h2>
+								<span class="subheading">Hello</span>
+								<h1 class="mb-4 mt-3">
+									I'm
+									<span>Qingning <br />
+										Zeng</span>
+								</h1>
+								<h2 class="mb-4"></h2>
+								<p>
+									<a href=""
+										target="_blank" class="btn-custom">Download CV</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/bg_cover.jpg);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<h1 class="mb-4 mt-3">I'm a <span>Software Developer</span></h1>
+								<p>
+									<a href=""
+										target="_blank" class="btn-custom">Download CV</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-about ftco-counter img ftco-section" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch" style="background-color: rgba(0, 0, 0, 0);">
+						<div class=""></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/about.gif);background-size: contain;border-radius: 40px;"></div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 py-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h2 class="mb-4" style="font-size: 42px; text-transform: capitalize;">
+								About Me
+							</h2>
+							<p style="font-size: 20px;">
+								I'm currently Studying at Duke University and my major is
+								Electrical and Computer Engineering. I am currently working as Software Development Engineer(Intern) at Microsoft.
+								Meanwhile I'm working on Matrix Origin open source project.
+							</p>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="media block-6 services d-block ftco-animate mobile_middle">
+								<a href="">
+									<img src="images/m365.png" alt="HTML tutorial"
+										style="width:150px;height:150px;border:8px;" />
+								</a>
+								<div class="media-body">
+									<h3 class="heading mb-3">  Microsoft 365 department</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="media block-6 services d-block ftco-animate mobile_middle"
+								style="align-content: center;">
+								<a href="">
+									<img src="images/Mo.png" alt="HTML tutorial"
+										style="width:229px;height:150px;border:20px; margin-inline-start: 0px" />
+								</a>
+								<div class="media-body">
+								<h3 class="heading mb-3">Matrix Origin Communitity</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Skills</span>
+					<h2 class="mb-4">Technical Expertise</h2>
+					<p>
+						Always ready to try hands-on new and emerging technologies
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Java</h3>
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+							</div>
+							<span class="bar-fill">90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>C Plus Plus</h3>
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+								aria-valuemax="100" style="width:75%">
+							</div>
+							<span class="bar-fill">75%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>SpringBoot</h3>
+						<div class="progress">
+							<div class="progress-bar color-2" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+							</div>
+							<span class="bar-fill">70%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Kubernetes</h3>
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:65%">
+							</div>
+							<span class="bar-fill">65%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>MySQL</h3>
+						<div class="progress">
+							<div class="progress-bar color-4" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+							</div>
+							<span class="bar-fill">90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Redis</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+								aria-valuemax="100" style="width:85%">
+							</div>
+							<span class="bar-fill">85%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Kafka</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+								aria-valuemax="100" style="width:60%">
+							</div>
+							<span class="bar-fill">60%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Elastic Search</h3>
+						<div class="progress ">
+							<div class="progress-bar color-6 " role="progressbar" aria-valuenow="65" aria-valuemin="0"
+								aria-valuemax="100" style="width:65%">
+							</div>
+							<span class="bar-fill">65%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section id="timeline-section" class="cd-container">
+		<div class="container" style=" padding-top: 10%; padding-bottom: 10%;">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Timeline</span>
+					<h2 class="mb-4">My journey so far</h2>
+					<p>
+						All my academic and professional experience with some milestones
+						achieved are summed up here:
+					</p>
+				</div>
+			</div>
+
+			<body>
+				<div id="cd-timeline" class="cd-container">
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-sharechat">
+							<img src="images/microsoft_logo.png" alt="Microsoft" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">Software Developer Intern </h6_black>
+							<h6_black class="timeline_text">Building <b style="color: rgb(36, 35, 35)">Opportunity Copilot</b> for Microsoft 365 Partner.
+								I am mainly responsible for the development of intelligent Q&A system and personalized recommendation system. 
+							</h6_black>
+							<h5 class="timeline_text cd-date">April 2024</h5>
+						</div>
+					</div>
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-zomato">
+							<img src="images/mo_logo.png" alt="Matrix one" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">Sumer OSPP 2024</h6_black>
+							<h6_black class="timeline_text">Attedned the <b>Open Source Promotion Plan</b> at Matrix Origin Community.
+								Developed a chat bot which can summary github Repo for users and find the implementation code of a feature in the repo. This chatbot helps users to learn the open source code and speed up the development process. 
+							</h6_black>
+							<h5 class="timeline_text cd-date">March 2024</h5>
+						</div>
+					</div>
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-moneyview">
+							<img src="images/r_logo.png" alt="Matic Network" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">School Project</h6_black>
+							<h6_black class="timeline_text">
+								Developed a <b>strategy game</b> based on Springboot. The game references the gameplay of RISK GAME.
+								Supports 3~5 players game room, including minion upgrade, attack, territory occupation and other functions, and supports multiplayer chat.
+								<h5 class="timeline_text cd-date">February 2024</h5>
+						</div>
+					</div>
+
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-white">
+							<img src="images/ji_logo.jpg" alt="Matic Network" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">undergraduate degree
+							</h6_black>
+							<h6_black class="timeline_text">
+							I graduated from Jilin University!</br>
+							In the meantime, I'm going to Duke to finish my graduate degree.</br>
+							Looking forward to all the best for the future						
+							</h6_black>
+							<h5 class="timeline_text cd-date">June 2023</h5>
+						</div>
+					</div>
+
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-black">
+							<img src="images/car_logo.png" style="padding-top: 10px;" alt="Matic Network" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">Graduation Design
+							</h6_black>
+							<h6_black class="timeline_text">
+							Developed monitoring software for driverless carts. Contains remote monitoring, remote control, pedestrian detection and other functions.								
+							</h6_black>
+							<h5 class="timeline_text cd-date">April 2023</h5>
+						</div>
+					</div>
+					
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-white">
+							<img src="images/nc_logo.jpg" alt="Inter-IIT Tech Meet 8.0" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">Summer Research
+							</h6_black>
+							<h6_black class="timeline_text">
+								Participated in a summer program at North Carolina State University. Built the Edge Serverless framework, which opens up more possibilities for edge computing.
+							</h6_black>
+		
+							<h5 class="timeline_text cd-date">June 2022</h5>
+						</div>
+					</div>
+
+					<!-- cd-timeline-block -->
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-yellow">
+							<img src="images/flower_logo.png" class="mobile_parsec" style="padding-top: 10px;"
+								alt="PARSEC 2020" />
+						</div>
+						<div class="cd-timeline-content" style="background-color: #f8f9fb">
+							<h6_black class="timeline_title" style="color: royalblue">China Computer Design Competition</h6_black>
+							<h6_black class="timeline_text">
+								A remote floriculture management system was developed. Functions such as identification of flowers are implemented at the edge end. And based on MQTT transmission to the server.
+							</h6_black>
+							<h5 class=" timeline_text cd-date">April 2022</h5>
+						</div>
+					</div>
+
+
+				</div>
+			</body>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="blog-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Blog</span>
+					<h2 class="mb-4">My Blog</h2>
+					<p>Sharing my tech knowledge through my blogs</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2 centre_text">Reach out to me here 👇</h2>
+						<p>
+							Feel free to ping me for volunteering, discussing your ideas or
+							grabbing a cup of coffee.
+						</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5 centre_text">
+							<li class="ftco-animate">
+								<a href="https://www.linkedin.com/in/qingning-zeng-6b70252b2/"><span
+										class="icon-linkedin"></span></a>
+							</li>
+							<li class="ftco-animate">
+								<a href="https://github.com/addw1"><span class="icon-github"></span></a>
+							</li>
+			
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div>
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+	<script src="js/switch.js"></script>
+	<script src="js/timeline.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/skill_counter.js"></script>
+
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
 </body>
 
 </html>
